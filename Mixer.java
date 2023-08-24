@@ -1,16 +1,16 @@
-class Fan {
+class Mixer {
 static boolean isConnected;
 static int minSpeed;
-static int maxSpeed = 5;
+static int maxSpeed = 4;
 static int currentSpeed ;
 public static boolean onOroff(){
 	System.out.println("Starting of the onOroff");
 	if(isConnected == false){
 		isConnected = true;
-		System.out.println("The fan is Turned on...");
+		System.out.println("The mixer is Turned on...");
 	}else if(isConnected == true){
 	     isConnected = false;
-		System.out.println("The fan is Turned off...");
+		System.out.println("The mixer is Turned off...");
 	}
 	System.out.println("End of the onOroff");
 	return isConnected;
@@ -26,7 +26,7 @@ public static boolean onOroff(){
 			System.out.println("Max speed is reached");
 			}
 	}else{
-		System.out.println("Turn on the fan");
+		System.out.println("Turn on the mixer");
 	}
 	System.out.println("End of increaseSpeed");
 	}
@@ -42,7 +42,7 @@ public static boolean onOroff(){
 			
 			}
 	}else{
-		System.out.println("Turn on the fan");
+		System.out.println("Turn on the mixer");
 	}
 	System.out.println("End of decreaseMixer");
 	}
